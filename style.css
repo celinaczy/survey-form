@@ -22,9 +22,8 @@ body {
 }
 
 .container {
-    position: absolute;
-    top:40;
-    margin-bottom: 60;
+    position: relative;
+    margin: 40;
     background-color: rgba(26, 26, 88, 0.8);
     z-index: 2;
     max-width: 600px;
@@ -47,6 +46,9 @@ h1 {
     margin-left: 50;
     margin-right: 50;        
 }
+.form{
+    background-color: rgba(26, 26, 88, 0.8);
+}
 
 .form-element {
     position: relative;
@@ -66,4 +68,20 @@ button {
     text-align: center;
     font-family: inherit;
     background-color: lawngreen;
+}
+
+#new-description {
+    position: relative;
+    top: 40%;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin: 30px;
+}
+
+.msg {
+    color: rgb(59, 13, 13);
+    background-color: rgba(255, 0, 0, 0.5);
+    margin: 1px;
+    font-size: small;
 }

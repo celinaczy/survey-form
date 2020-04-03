@@ -9,18 +9,22 @@
         <div class="container">
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         <h1 id="title">English on-line</h1>
+        <p id=new-description></p>
         <p id=description>Fill in the form below if you are interested in English on-line classes and I will get back to you!</p>
         <form id="survey-form">
             <div class="form-element"> 
             <label id="name-label" for="name">Name</label>
-            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
+            <p class='msg' id='name-error'></p> 
             </div>
             <br>
-            <div class="form-element"> 
+            <div class="form-element">
                 <label id="email-label" for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required="">
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" >
+                <p class='msg' id='mail-error'></p> 
             </div>
             <br>
+            <!--
             <div class="form-element"> 
                 <label id="number-label" for="phone">How many calsses a week would you like to have? <br>(1 class = 60 min)</label>
                 <input type="number" name="years" id="number" min=1 max=10 class="form-control" placeholder="Number of classes a week" required="">
@@ -36,18 +40,21 @@
                 </select>
             </div>
             <br>
-            <div class="form-element">
+        -->
+            <div class="form-element" id="radio">
                 <p>Why do you want to improve your English?</p>
                 <label>
-                    <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked=""> for work
+                    <input name="user-reason" value="work" type="radio" class="input-radio" > for work
                 </label>
                 <label>
-                    <input name="user-recommend" value="definitely" type="radio" class="input-radio" > to pass an exam 
+                    <input name="user-reason" value="exam" type="radio" class="input-radio" > to pass an exam 
                 </label>
                 <label>
-                    <input name="user-recommend" value="definitely" type="radio" class="input-radio" > to improve your speaking skills 
+                    <input name="user-reason" value="speaking" type="radio" class="input-radio" > to improve your speaking skills 
                 </label>
+            <p class='msg' id='radio-error'></p> 
             </div>
+            <!--
             <div class="form-element">
                 <p>
                 Which days of the week are you available?<br>
@@ -64,13 +71,17 @@
                     <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
                 </div>
                 <br>
+                -->
                 <div class="form-element">
-                    <p>Submit the form and you'll receive a personalized offer on your e-mail</p>
+                    <p id="submit-description">Submit the form and you'll receive a personalized offer on your e-mail</p>
                     <button type="submit" id="submit" class="submit-button">
                     Submit
                     </button>
                 </div>
+                <div class="form-element">
+                </div>
         </form>
     </div>
+    <script src="main.js"></script>
     </body>
 </html>
